@@ -77,13 +77,12 @@ def main():
     # Add ElevenLabs ConvAI widget with proper styling and configuration
     elevenlabs_widget = """
         <div style="margin: 20px 0; padding: 10px; border-radius: 10px;">
-            <elevenlabs-convai 
-                agent-id="f2rYWbsoInaOzCea6BTu"
-                style="width: 100%; min-height: 600px;">
-            </elevenlabs-convai>
-            <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+            <elevenlabs-convai agent-id="f2rYWbsoInaOzCea6BTu"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
         </div>
     """
+
+
+
     components.html(elevenlabs_widget, height=650, scrolling=True)
 
     # Small input box for the prompt
